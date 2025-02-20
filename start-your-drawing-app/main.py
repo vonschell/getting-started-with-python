@@ -1,38 +1,33 @@
 import turtle as turtle
-import datetime 
 
-turtle.pencolor("orange")
-turtle.forward(100)
-turtle.right(60)
+def star():
+    #use for loop to draw star
+    for i in range(5):
+        turtle.pencolor("black")
+        turtle.forward(110)
+        turtle.left(216)
 
-turtle.pencolor("red")
-turtle.forward(100)
-turtle.right(60)
+def square():
+    #use for loop to draw square
+    for i in range(4):
+        turtle.pencolor("purple")
+        turtle.forward(100)
+        turtle.right(90)
 
-turtle.pencolor("yellow")
-turtle.forward(100)
-turtle.right(60)
+def hexagon():
+    #use for loop to draw hexagon
+    for i in range(6):
+        turtle.pencolor("green")
+        turtle.forward(100)
+        turtle.right(60)
 
-turtle.pencolor("orange")
-turtle.forward(100)
-turtle.right(60)
-
-turtle.pencolor("red")
-turtle.forward(100)
-turtle.right(60)
-
-turtle.pencolor("yellow")
-turtle.forward(100)
-turtle.right(60)
-
-#Get the current time
-current_time = datetime.datetime.now()
-
-#Print the date in 00/00/00 format
-print("Date (MM/DD/YY):", current_time.strftime("%m/%d/%y"))
-
-#Print the date in January, 1, 2025 format
-print("Date (Month, Day, Year):", current_time.strftime("%B, %d, %Y"))
-
-#Print the date with the current time
-print("Date and Time:", current_time)
+selection = input("1. Star\n2. Square\n3. Hexagon\nSelect a number: ")
+if selection == "1":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  star()
+elif selection == "2":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  square()
+elif selection == "3":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  hexagon()
