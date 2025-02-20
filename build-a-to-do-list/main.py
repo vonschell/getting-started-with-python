@@ -3,6 +3,7 @@ done = False
 
 print("Type 'done' at any time to exit")
 
+#Create a while loop that is set to not done
 while not done:
     new_item = input("Add an item to the to-do list here: ")
 
