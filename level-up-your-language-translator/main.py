@@ -2,7 +2,7 @@ import csv
 
 translations = {}
 
-with open("translations.csv", "r") as words:
+with open("translations.csv", "r", encoding="utf-8") as words:
   reader = csv.DictReader(words, delimiter=",")
   for line in reader:
     english = line["English"].lower()
